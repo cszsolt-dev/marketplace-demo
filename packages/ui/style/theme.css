@@ -1,0 +1,29 @@
+@theme {
+	--color-midnight-950: #13181c;
+	--color-midnight-900: #202838;
+	--color-midnight-800: #273654;
+	--color-midnight-700: #2d3f62;
+	--color-midnight-600: #3A507E;
+	--color-midnight-500: #47619A;
+	--color-midnight-400: #5774B2;
+	--color-midnight-300: #738BBF;
+	--color-midnight-200: #8FA2CC;
+	--color-midnight-100: #B9C5DF;
+	--color-midnight-50: #E3E8F2;
+}
+
+@theme inline {
+	--color-outline: #e09515;
+}
+
+@layer base {
+	a:focus-visible,
+	button:focus-visible,
+	input:focus-visible {
+		outline: 1px solid var(--color-outline) !important;
+	}
+}
+
+@utility line-height-1 {
+	line-height: 1;
+}
