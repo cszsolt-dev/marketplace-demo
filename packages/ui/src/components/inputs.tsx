@@ -1,4 +1,4 @@
-import type { ComponentProps } from "react";
+import React, { type ComponentProps } from "react";
 import { twMerge } from "tailwind-merge";
 
 export function Input(props: ComponentProps<"input">) {

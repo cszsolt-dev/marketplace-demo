@@ -15,15 +15,3 @@
 @theme inline {
 	--color-outline: #e09515;
 }
-
-@layer base {
-	a:focus-visible,
-	button:focus-visible,
-	input:focus-visible {
-		outline: 1px solid var(--color-outline) !important;
-	}
-}
-
-@utility line-height-1 {
-	line-height: 1;
-}

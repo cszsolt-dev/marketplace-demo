@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"module": "esnext",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"types": ["node"],
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"esModuleInterop": true,
+		"moduleResolution": "bundler",
+		"jsx": "react",
+		"skipLibCheck": true,
+		"paths": {
+			"@/*": ["./src/*"]
+		}
+	},
+	"include": ["**/*.ts", "**/*.tsx", "**/*.mts"],
+	"exclude": ["node_modules"]
+}
