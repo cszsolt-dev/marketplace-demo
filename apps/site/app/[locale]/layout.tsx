@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
+import { NextIntlClientProvider } from "next-intl";
 
 import AppHeader from "@/features/AppHeader";
+import { allowedLocales } from "@/i18n/utils";
 import "@/style/global.css";
 
 const font = Roboto({
@@ -15,15 +17,18 @@ export const metadata: Metadata = {
 };
 
 export function generateStaticParams() {
-	return [{ language: "en" }];
+	return allowedLocales.map((locale) => ({ locale }));
 }
 
 export default async function RootLayout(props: LayoutProps<"/[language]">) {
+export default async function RootLayout(props: LayoutProps<"/[locale]">) {
 	return (
 		<html className={`${font.variable} antialiased`}>
 			<body className="text-sm">
-				<AppHeader />
-				{props.children}
+				<NextIntlClientProvider>
+					<AppHeader />
+					{props.children}
+				</NextIntlClientProvider>
 			</body>
 		</html>
 	);

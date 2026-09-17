@@ -1,0 +1,10 @@
+{
+	"app": {
+		"appHeader": {
+			"homeLinkTitle": "Home",
+			"searchInputPlaceholder": "Search products",
+			"loginActionTitle": "Log in",
+			"signupActionTitle": "Create an account"
+		}
+	}
+}
