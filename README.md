@@ -99,8 +99,8 @@ Unit and end-to-end tests covering the flow.
 > Not much runnable code is published yet. Setup instructions will be added as the project stabilizes.
 
 ```bash
-git clone https://github.com/<user>/<repo>.git
-cd <repo>
+git clone https://github.com/cszsolt-dev/marketplace-demo.git
+cd marketplace-demo
 npm install
 ```
 
