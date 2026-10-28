@@ -1,0 +1,22 @@
+{
+  "name": "marketplace-demo",
+  "version": "0.0.1",
+  "description": "Experimental fullstack marketplace project",
+  "homepage": "https://github.com/cszsolt86/marketplace-demo#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cszsolt86/marketplace-demo.git"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "license": "GPL-2.0",
+  "author": "Zsolt Csatari",
+  "type": "module",
+  "scripts": {},
+  "devDependencies": {
+    "prettier": "^3.9.6",
+    "prettier-plugin-tailwindcss": "^0.8.1"
+  }
+}
